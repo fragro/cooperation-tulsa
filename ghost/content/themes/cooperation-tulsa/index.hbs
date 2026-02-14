@@ -1,0 +1,98 @@
+{{!< default}}
+
+{{!-- Hero Section --}}
+<section class="hero">
+    <div class="container">
+        <h1>Cooperation Tulsa</h1>
+        <p>Building community power through gardens, popular education, mutual aid, and direct democracy in Tulsa, Oklahoma.</p>
+        <div class="hero-actions">
+            <a href="/projects/" class="btn btn-wheat">Our Projects</a>
+            <a href="/events/" class="btn btn-outline" style="border-color: var(--color-cream); color: var(--color-cream);">Upcoming Events</a>
+        </div>
+    </div>
+</section>
+
+{{!-- Bookchin Quote --}}
+{{> bookchin-quote}}
+
+{{!-- Mission Section --}}
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Mission</h2>
+            <p>At Cooperation Tulsa, we empower and uplift our community through collective and inclusive practices. We strive to build a more equitable and resilient city by fostering local food sovereignty, expanding communal access to land, and promoting direct democracy.</p>
+        </div>
+    </div>
+</section>
+
+{{!-- Featured Projects --}}
+{{#get "posts" filter="tag:hash-project+tag:hash-active" limit="3" include="tags" as |projects|}}
+    {{#if projects}}
+        <section class="section" style="background-color: var(--color-sand);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Projects</h2>
+                    <p>From urban gardens to popular education, here's how we're building the new world in the shell of the old.</p>
+                </div>
+                <div class="grid grid-3">
+                    {{#foreach projects}}
+                        {{> project-card}}
+                    {{/foreach}}
+                </div>
+                <div style="text-align: center; margin-top: var(--space-xl);">
+                    <a href="/projects/" class="btn btn-outline">View All Projects</a>
+                </div>
+            </div>
+        </section>
+    {{/if}}
+{{/get}}
+
+{{!-- Recent Blog Posts --}}
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Latest Updates</h2>
+            <p>News, reflections, and stories from our community.</p>
+        </div>
+        {{#if posts}}
+            <div class="grid grid-3">
+                {{#foreach posts limit="6"}}
+                    {{> post-card}}
+                {{/foreach}}
+            </div>
+        {{else}}
+            <p style="text-align: center; color: var(--color-soil);">No posts yet. Check back soon!</p>
+        {{/if}}
+    </div>
+</section>
+
+{{!-- Upcoming Events --}}
+{{#get "posts" filter="tag:events" limit="3" order="published_at desc" include="tags" as |events|}}
+    {{#if events}}
+        <section class="section" style="background-color: var(--color-sand);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Upcoming Events</h2>
+                    <p>Join us at our regular gatherings and community events.</p>
+                </div>
+                <div class="grid grid-2">
+                    {{#foreach events}}
+                        {{> event-card}}
+                    {{/foreach}}
+                </div>
+                <div style="text-align: center; margin-top: var(--space-xl);">
+                    <a href="/events/" class="btn btn-outline">All Events</a>
+                </div>
+            </div>
+        </section>
+    {{/if}}
+{{/get}}
+
+{{!-- Newsletter Signup --}}
+<section class="newsletter-section">
+    <div class="container">
+        <h2>Join Our Community</h2>
+        <p>Get updates on events, volunteer days, and community news delivered to your inbox.</p>
+        {{> newsletter-form}}
+    </div>
+</section>

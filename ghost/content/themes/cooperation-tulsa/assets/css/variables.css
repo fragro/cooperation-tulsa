@@ -1,0 +1,47 @@
+:root {
+    /* Colors */
+    --color-sage: #4A7C59;
+    --color-forest: #2D5F3E;
+    --color-wheat: #D4A843;
+    --color-clay: #8B6914;
+    --color-cream: #FDF8F0;
+    --color-sand: #F5E6C8;
+    --color-soil: #5C3D2E;
+    --color-charcoal: #2C2C2C;
+    --color-white: #FFFFFF;
+
+    /* Typography */
+    --font-heading: 'DM Serif Display', Georgia, serif;
+    --font-body: 'Source Sans 3', 'Source Sans Pro', -apple-system, sans-serif;
+
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.25rem;
+    --text-5xl: 3rem;
+
+    /* Spacing */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+    --space-3xl: 4rem;
+    --space-4xl: 6rem;
+
+    /* Layout */
+    --max-width: 1200px;
+    --max-width-narrow: 720px;
+    --border-radius: 8px;
+    --border-radius-lg: 12px;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+}

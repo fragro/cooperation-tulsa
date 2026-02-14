@@ -1,0 +1,25 @@
+{{!< default}}
+
+<section class="tag-header">
+    <div class="container">
+        <h1>{{name}}</h1>
+        {{#if description}}
+            <p>{{description}}</p>
+        {{/if}}
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        {{#if posts}}
+            <div class="grid grid-3">
+                {{#foreach posts}}
+                    {{> post-card}}
+                {{/foreach}}
+            </div>
+            {{> pagination}}
+        {{else}}
+            <p style="text-align: center; color: var(--color-soil);">No posts with this tag yet.</p>
+        {{/if}}
+    </div>
+</section>

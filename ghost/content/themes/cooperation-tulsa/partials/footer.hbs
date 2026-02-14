@@ -1,0 +1,41 @@
+<footer class="site-footer">
+    <div class="footer-inner container">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <h3 class="footer-heading">{{@site.title}}</h3>
+                <p class="footer-description">{{@site.description}}</p>
+                <div class="footer-social">
+                    {{#if @custom.instagram_url}}
+                        <a href="{{@custom.instagram_url}}" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+                    {{/if}}
+                    {{#if @custom.facebook_url}}
+                        <a href="{{@custom.facebook_url}}" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+                    {{/if}}
+                    {{#if @custom.twitter_url}}
+                        <a href="{{@custom.twitter_url}}" class="social-link" target="_blank" rel="noopener" aria-label="Twitter">Twitter</a>
+                    {{/if}}
+                    {{#if @custom.discord_url}}
+                        <a href="{{@custom.discord_url}}" class="social-link" target="_blank" rel="noopener" aria-label="Discord">Discord</a>
+                    {{/if}}
+                </div>
+            </div>
+
+            <div class="footer-nav">
+                <h3 class="footer-heading">Navigate</h3>
+                {{navigation}}
+            </div>
+
+            <div class="footer-newsletter">
+                <h3 class="footer-heading">Stay Connected</h3>
+                <p>Get updates on events, projects, and community news.</p>
+                {{> newsletter-form}}
+            </div>
+        </div>
+
+        {{> bookchin-quote}}
+
+        <div class="footer-bottom">
+            <p>&copy; {{date format="YYYY"}} {{@site.title}}. Built with community power &amp; <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>.</p>
+        </div>
+    </div>
+</footer>

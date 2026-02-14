@@ -1,0 +1,22 @@
+<header class="site-header">
+    <div class="header-inner container">
+        <a class="site-logo" href="{{@site.url}}">
+            {{#if @site.logo}}
+                <img src="{{@site.logo}}" alt="{{@site.title}}">
+            {{else}}
+                <span class="site-title">{{@site.title}}</span>
+            {{/if}}
+        </a>
+
+        <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+        </button>
+
+        <nav class="nav-menu" role="navigation">
+            {{navigation}}
+            <a href="{{@custom.donation_url}}" class="btn btn-wheat nav-donate" target="_blank" rel="noopener">Donate</a>
+        </nav>
+    </div>
+</header>

@@ -1,0 +1,44 @@
+{{!< default}}
+
+<section class="hero" style="padding: var(--space-3xl) 0;">
+    <div class="container">
+        <h1>About Cooperation Tulsa</h1>
+    </div>
+</section>
+
+{{#if feature_image}}
+    <div class="container">
+        <figure class="post-feature-image">
+            <img
+                srcset="{{img_url feature_image size="s"}} 300w,
+                        {{img_url feature_image size="m"}} 600w,
+                        {{img_url feature_image size="l"}} 1000w"
+                sizes="(max-width: 800px) 100vw, 1000px"
+                src="{{img_url feature_image size="l"}}"
+                alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}About Cooperation Tulsa{{/if}}"
+            >
+        </figure>
+    </div>
+{{/if}}
+
+<section class="about-section">
+    <div class="about-content">
+        {{#if html}}
+            {{content}}
+        {{else}}
+            <p>At Cooperation Tulsa, our mission is to empower and uplift our community through collective and inclusive practices. Based in Tulsa, we strive to build a more equitable and resilient city by fostering local food sovereignty, expanding communal access to land, and promoting direct democracy.</p>
+            <p>Embracing principles of mutual aid and collective action, we are dedicated to creating a network of community gardens and local councils that not only nourish our neighborhoods but also strengthen our shared commitment to social justice and sustainable living.</p>
+            <p>We draw inspiration from the work of Murray Bookchin, the democratic confederalism practiced in Rojava, and the community-building efforts of Cooperation Jackson.</p>
+        {{/if}}
+    </div>
+</section>
+
+{{> bookchin-quote}}
+
+<section class="newsletter-section">
+    <div class="container">
+        <h2>Join the Movement</h2>
+        <p>Stay connected with our community and get involved.</p>
+        {{> newsletter-form}}
+    </div>
+</section>

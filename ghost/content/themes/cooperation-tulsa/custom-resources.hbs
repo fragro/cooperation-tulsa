@@ -1,0 +1,32 @@
+{{!< default}}
+
+<section class="hero" style="padding: var(--space-3xl) 0;">
+    <div class="container">
+        <h1>Resources</h1>
+        <p>Reading lists, guides, theory, and how-tos for building community power.</p>
+    </div>
+</section>
+
+{{!-- Filter Tabs --}}
+<section class="section">
+    <div class="container">
+        <div class="filter-tabs">
+            <a href="/resources/" class="filter-tab is-active">All</a>
+            <a href="/tag/reading-list/" class="filter-tab">Reading Lists</a>
+            <a href="/tag/guides/" class="filter-tab">Guides</a>
+            <a href="/tag/theory/" class="filter-tab">Theory</a>
+            <a href="/tag/how-to/" class="filter-tab">How-To</a>
+        </div>
+
+        {{#if posts}}
+            <div class="grid grid-3">
+                {{#foreach posts}}
+                    {{> resource-card}}
+                {{/foreach}}
+            </div>
+            {{> pagination}}
+        {{else}}
+            <p style="text-align: center; color: var(--color-soil);">Resources are being gathered. Check back soon!</p>
+        {{/if}}
+    </div>
+</section>

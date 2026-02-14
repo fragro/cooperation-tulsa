@@ -1,0 +1,51 @@
+{
+  "name": "cooperation-tulsa",
+  "description": "A custom Ghost theme for Cooperation Tulsa — community gardens, popular education, mutual aid, and direct democracy.",
+  "version": "1.0.0",
+  "engines": {
+    "ghost": ">=5.0.0"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Cooperation Tulsa",
+    "email": "cooperationtulsa@gmail.com"
+  },
+  "config": {
+    "posts_per_page": 12,
+    "image_sizes": {
+      "xxs": { "width": 30 },
+      "xs": { "width": 100 },
+      "s": { "width": 300 },
+      "m": { "width": 600 },
+      "l": { "width": 1000 },
+      "xl": { "width": 2000 }
+    },
+    "custom": {
+      "donation_url": {
+        "type": "text",
+        "default": "https://opencollective.com/cooperation-tulsa",
+        "description": "Open Collective or donation page URL"
+      },
+      "discord_url": {
+        "type": "text",
+        "default": "",
+        "description": "Discord invite link"
+      },
+      "instagram_url": {
+        "type": "text",
+        "default": "",
+        "description": "Instagram profile URL"
+      },
+      "facebook_url": {
+        "type": "text",
+        "default": "",
+        "description": "Facebook page URL"
+      },
+      "twitter_url": {
+        "type": "text",
+        "default": "",
+        "description": "Twitter/X profile URL"
+      }
+    }
+  }
+}

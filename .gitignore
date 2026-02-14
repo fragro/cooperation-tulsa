@@ -1,0 +1,51 @@
+# Environment & secrets
+.env
+
+# Ghost runtime data (generated inside container)
+ghost/content/data/
+ghost/content/logs/
+ghost/content/images/
+ghost/content/media/
+ghost/content/files/
+ghost/content/adapters/
+
+# Default Ghost theme (ships with Ghost)
+ghost/content/themes/casper/
+ghost/content/themes/source/
+
+# Ghost settings backups (auto-generated)
+ghost/content/settings/routes-*.yaml
+
+# Docker volumes
+mysql_data/
+
+# Node
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Debug/scratch scripts
+*.pyc
+__pycache__/
+switch-theme.py
+check-post.py
+fix-db.py
+fix-final.py
+fix-ghost.py
+fix-ghost.sh
+test-api-post.py
+test-post.py
+test-routes.py
+upload-routes.py
+fix-*.py
+test-*.py
+
+# Editor
+*.swp
+*.swo
+*~
+
+# Archives
+*.zip

@@ -1,0 +1,43 @@
+{{!< default}}
+
+{{#post}}
+
+<article class="post-full">
+    <div class="container">
+        <header class="post-header">
+            {{#if primary_tag}}
+                <a href="{{primary_tag.url}}" class="post-tag">{{primary_tag.name}}</a>
+            {{/if}}
+            <h1>{{title}}</h1>
+            <div class="post-meta">
+                <span>By {{authors}}</span>
+                <time datetime="{{date format="YYYY-MM-DD"}}"> &mdash; {{date format="MMMM D, YYYY"}}</time>
+                {{#if reading_time}}
+                    <span> &mdash; {{reading_time}}</span>
+                {{/if}}
+            </div>
+        </header>
+
+        {{#if feature_image}}
+            <figure class="post-feature-image">
+                <img
+                    srcset="{{img_url feature_image size="s"}} 300w,
+                            {{img_url feature_image size="m"}} 600w,
+                            {{img_url feature_image size="l"}} 1000w"
+                    sizes="(max-width: 800px) 100vw, 1000px"
+                    src="{{img_url feature_image size="l"}}"
+                    alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}"
+                >
+                {{#if feature_image_caption}}
+                    <figcaption>{{feature_image_caption}}</figcaption>
+                {{/if}}
+            </figure>
+        {{/if}}
+
+        <section class="post-content">
+            {{content}}
+        </section>
+    </div>
+</article>
+
+{{/post}}

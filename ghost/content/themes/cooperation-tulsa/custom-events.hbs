@@ -1,0 +1,72 @@
+{{!< default}}
+
+<section class="hero" style="padding: var(--space-3xl) 0;">
+    <div class="container">
+        <h1>Events</h1>
+        <p>Join us at our regular community gatherings and special events. All are welcome!</p>
+    </div>
+</section>
+
+{{!-- Recurring Schedule --}}
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Recurring Schedule</h2>
+            <p>Our regular community activities and meeting times.</p>
+        </div>
+        <div class="schedule-grid">
+            <div class="schedule-item">
+                <h3>Flat Rock Work Days</h3>
+                <p class="schedule-detail">Every Saturday, ~1pm until sunset</p>
+                <p class="schedule-detail">5481 N. Peoria Ave</p>
+                <p class="schedule-detail">All skill levels welcome. Come garden with us!</p>
+            </div>
+            <div class="schedule-item">
+                <h3>Popular Education</h3>
+                <p class="schedule-detail">1st &amp; 3rd Wednesday, 7:30&ndash;8:30pm</p>
+                <p class="schedule-detail">Online (Discord)</p>
+                <p class="schedule-detail">Introductory discussion group for all ages and knowledge levels.</p>
+            </div>
+            <div class="schedule-item">
+                <h3>Organizer Education</h3>
+                <p class="schedule-detail">2nd &amp; 4th Monday, 8:00&ndash;9:30pm</p>
+                <p class="schedule-detail">Online (Discord)</p>
+                <p class="schedule-detail">Study group for local organizers — theory, history, and praxis.</p>
+            </div>
+            <div class="schedule-item">
+                <h3>First Friday Tabling</h3>
+                <p class="schedule-detail">First Friday of every month</p>
+                <p class="schedule-detail">Tulsa Arts District</p>
+                <p class="schedule-detail">Free reading materials, books, and community dialogue.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{!-- Dynamic Event Posts --}}
+<section class="section" style="background-color: var(--color-sand);">
+    <div class="container">
+        <div class="section-header">
+            <h2>Event Updates</h2>
+        </div>
+        {{#if posts}}
+            <div class="grid grid-2">
+                {{#foreach posts}}
+                    {{> event-card}}
+                {{/foreach}}
+            </div>
+            {{> pagination}}
+        {{else}}
+            <p style="text-align: center; color: var(--color-soil);">No event posts yet. Check back soon or see our recurring schedule above!</p>
+        {{/if}}
+    </div>
+</section>
+
+{{!-- Newsletter --}}
+<section class="newsletter-section">
+    <div class="container">
+        <h2>Never Miss an Event</h2>
+        <p>Subscribe to get notified about upcoming events and gatherings.</p>
+        {{> newsletter-form}}
+    </div>
+</section>

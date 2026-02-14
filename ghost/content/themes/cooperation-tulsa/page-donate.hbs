@@ -1,0 +1,43 @@
+{{!< default}}
+
+<section class="donate-hero">
+    <div class="container">
+        <h1>Support Our Work</h1>
+        <p>Every contribution helps us grow community gardens, host educational programs, and build a more equitable Tulsa.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="donate-options">
+            <div class="donate-option">
+                <h3>Financial Donations</h3>
+                <p>Your donations help us purchase seeds, tools, building materials, and educational resources. We operate transparently through Open Collective.</p>
+                <a href="{{@custom.donation_url}}" class="btn btn-wheat" target="_blank" rel="noopener">Donate on Open Collective</a>
+            </div>
+            <div class="donate-option">
+                <h3>Volunteer Your Time</h3>
+                <p>Join us at Flat Rock Urban Garden every Saturday from around 1pm until sunset. All skill and ability levels welcome — no experience necessary!</p>
+                <a href="/events/" class="btn btn-sage">See Our Schedule</a>
+            </div>
+            <div class="donate-option">
+                <h3>Material Donations</h3>
+                <p>We accept donations of gardening tools, seeds, lumber, compost, books, and other materials that support our community work.</p>
+                <a href="mailto:cooperationtulsa@gmail.com" class="btn btn-outline">Get in Touch</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{!-- Page content from Ghost editor --}}
+{{#if html}}
+    <section class="section" style="background-color: var(--color-sand);">
+        <div class="container-narrow">
+            <div class="post-content">
+                {{content}}
+            </div>
+        </div>
+    </section>
+{{/if}}
+
+{{> bookchin-quote}}

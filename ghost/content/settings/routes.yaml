@@ -1,0 +1,20 @@
+routes:
+  /donate/:
+    template: page-donate
+
+collections:
+  /:
+    permalink: /blog/{slug}/
+    filter: tag:-events+tag:-resources
+    template: index
+  /events/:
+    permalink: /events/{slug}/
+    filter: tag:events
+    template: custom-events
+  /resources/:
+    permalink: /resources/{slug}/
+    filter: tag:resources
+    template: custom-resources
+
+taxonomies:
+  tag: /tag/{slug}/

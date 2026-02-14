@@ -1,0 +1,15 @@
+<article class="event-card">
+    <div class="event-date-badge">
+        <span class="month">{{date format="MMM"}}</span>
+        <span class="day">{{date format="D"}}</span>
+    </div>
+    <div class="card-body">
+        <h3 class="card-title"><a href="{{url}}">{{title}}</a></h3>
+        {{#if custom_excerpt}}
+            <p class="card-excerpt">{{custom_excerpt}}</p>
+        {{else}}
+            <p class="card-excerpt">{{excerpt words="20"}}</p>
+        {{/if}}
+        <a href="{{url}}" class="card-meta" style="font-weight: 600; color: var(--color-sage);">Details &rarr;</a>
+    </div>
+</article>

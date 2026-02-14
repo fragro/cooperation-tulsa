@@ -1,0 +1,101 @@
+{{!< default}}
+
+<section class="hero" style="padding: var(--space-3xl) 0;">
+    <div class="container">
+        <h1>Our Projects</h1>
+        <p>From urban gardens to popular education, we're building community power through direct action and mutual aid.</p>
+    </div>
+</section>
+
+{{!-- Active Projects --}}
+{{#get "posts" filter="tag:hash-project+tag:hash-active" include="tags" as |projects|}}
+    {{#if projects}}
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Active Projects</h2>
+                    <p>Current initiatives where you can get involved today.</p>
+                </div>
+                <div class="grid grid-2">
+                    {{#foreach projects}}
+                        <article class="project-card">
+                            {{#if feature_image}}
+                                <a href="{{url}}" class="card-image">
+                                    <img
+                                        srcset="{{img_url feature_image size="s"}} 300w,
+                                                {{img_url feature_image size="m"}} 600w"
+                                        sizes="(max-width: 600px) 100vw, 600px"
+                                        src="{{img_url feature_image size="m"}}"
+                                        alt="{{title}}"
+                                        loading="lazy"
+                                    >
+                                </a>
+                            {{/if}}
+                            <div class="card-body">
+                                <span class="project-status project-status-active">Active</span>
+                                <h3 class="card-title"><a href="{{url}}">{{title}}</a></h3>
+                                <p class="card-excerpt">{{excerpt words="30"}}</p>
+                                <a href="{{url}}" class="btn btn-sage" style="font-size: var(--text-sm);">Learn More</a>
+                            </div>
+                        </article>
+                    {{/foreach}}
+                </div>
+            </div>
+        </section>
+    {{/if}}
+{{/get}}
+
+{{!-- Community-Managed Projects --}}
+{{#get "posts" filter="tag:hash-project+tag:hash-community-managed" include="tags" as |projects|}}
+    {{#if projects}}
+        <section class="section" style="background-color: var(--color-sand);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Community-Managed</h2>
+                    <p>Projects we helped build that are now thriving under community stewardship.</p>
+                </div>
+                <div class="grid grid-2">
+                    {{#foreach projects}}
+                        <article class="project-card">
+                            {{#if feature_image}}
+                                <a href="{{url}}" class="card-image">
+                                    <img src="{{img_url feature_image size="m"}}" alt="{{title}}" loading="lazy">
+                                </a>
+                            {{/if}}
+                            <div class="card-body">
+                                <span class="project-status project-status-community">Community-Managed</span>
+                                <h3 class="card-title"><a href="{{url}}">{{title}}</a></h3>
+                                <p class="card-excerpt">{{excerpt words="30"}}</p>
+                            </div>
+                        </article>
+                    {{/foreach}}
+                </div>
+            </div>
+        </section>
+    {{/if}}
+{{/get}}
+
+{{!-- Archived Projects --}}
+{{#get "posts" filter="tag:hash-project+tag:hash-archived" include="tags" as |projects|}}
+    {{#if projects}}
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Archived Projects</h2>
+                    <p>Past initiatives that shaped who we are today.</p>
+                </div>
+                <div class="grid grid-2">
+                    {{#foreach projects}}
+                        <article class="project-card">
+                            <div class="card-body">
+                                <span class="project-status project-status-archived">Archived</span>
+                                <h3 class="card-title"><a href="{{url}}">{{title}}</a></h3>
+                                <p class="card-excerpt">{{excerpt words="30"}}</p>
+                            </div>
+                        </article>
+                    {{/foreach}}
+                </div>
+            </div>
+        </section>
+    {{/if}}
+{{/get}}

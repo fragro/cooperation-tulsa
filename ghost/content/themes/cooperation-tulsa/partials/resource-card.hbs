@@ -1,0 +1,12 @@
+<article class="resource-card">
+    {{#if tags.[1]}}
+        <span class="resource-tag">{{tags.[1].name}}</span>
+    {{/if}}
+    <h3 class="card-title"><a href="{{url}}">{{title}}</a></h3>
+    {{#if custom_excerpt}}
+        <p class="card-excerpt">{{custom_excerpt}}</p>
+    {{else}}
+        <p class="card-excerpt">{{excerpt words="25"}}</p>
+    {{/if}}
+    <a href="{{url}}" class="card-meta" style="font-weight: 600; color: var(--color-sage);">Read More &rarr;</a>
+</article>
