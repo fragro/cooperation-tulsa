@@ -113,18 +113,6 @@ Configurable in Ghost Admin > Settings > Design:
 
 6. Upload the custom routes file via Ghost Admin > Settings > Labs > Routes, or copy `ghost/content/settings/routes.yaml` into place.
 
-### Current Deployment
-
-| Component | Detail |
-|---|---|
-| Host | Proxmox cluster02 (192.168.50.201) |
-| Container | LXC CT 202 (Debian, Docker) |
-| Container IP | 192.168.50.198 |
-| Ghost | Port 2368 |
-| Ghost Admin | http://192.168.50.198:2368/ghost/ |
-| MySQL | Internal Docker network (not exposed) |
-| MailHog | Port 8025 (dev email capture) |
-
 ### Updating the Theme
 
 After making changes to theme files locally:
