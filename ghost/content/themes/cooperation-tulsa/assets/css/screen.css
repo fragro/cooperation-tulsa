@@ -256,6 +256,21 @@ ul, ol {
     color: var(--color-sage);
 }
 
+.nav-search {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-charcoal);
+    padding: var(--space-xs);
+    display: flex;
+    align-items: center;
+    transition: color 0.2s;
+}
+
+.nav-search:hover {
+    color: var(--color-sage);
+}
+
 .nav-donate {
     padding: var(--space-xs) var(--space-lg);
     font-size: var(--text-sm);
