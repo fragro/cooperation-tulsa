@@ -1,20 +1,26 @@
-# Environment & secrets
+# Environment and secrets
 .env
+*.env
+.env.*
 
-# Ghost runtime data (generated inside container)
+# Ghost runtime data
 ghost/content/data/
 ghost/content/logs/
-ghost/content/images/
+ghost/content/images/size/
 ghost/content/media/
 ghost/content/files/
 ghost/content/adapters/
 
-# Default Ghost theme (ships with Ghost)
+# Default Ghost themes (not ours)
 ghost/content/themes/casper/
 ghost/content/themes/source/
 
-# Ghost settings backups (auto-generated)
-ghost/content/settings/routes-*.yaml
+# Ghost public assets (auto-generated)
+ghost/content/public/
+
+# Raw media (too large for git)
+media/
+new_media/
 
 # Docker volumes
 mysql_data/
@@ -26,26 +32,16 @@ node_modules/
 .DS_Store
 Thumbs.db
 
-# Debug/scratch scripts
-*.pyc
-__pycache__/
-switch-theme.py
-check-post.py
-fix-db.py
-fix-final.py
-fix-ghost.py
-fix-ghost.sh
-test-api-post.py
-test-post.py
-test-routes.py
-upload-routes.py
-fix-*.py
-test-*.py
-
-# Editor
+# Editor files
 *.swp
 *.swo
 *~
+.vscode/
+.idea/
+
+# Python
+*.pyc
+__pycache__/
 
 # Archives
 *.zip

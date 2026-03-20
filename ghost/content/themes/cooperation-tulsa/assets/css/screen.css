@@ -444,6 +444,10 @@ ul, ol {
 
 .hero {
     background-color: var(--color-forest);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+                      url('/content/images/gallery/flatrock-wheelbarrow-wide.webp');
+    background-size: cover;
+    background-position: center;
     color: var(--color-cream);
     padding: var(--space-4xl) 0;
     text-align: center;
