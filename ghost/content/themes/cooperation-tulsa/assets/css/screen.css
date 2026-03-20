@@ -1062,6 +1062,27 @@ ul, ol {
     aspect-ratio: 21 / 9;
 }
 
+.land-address {
+    font-size: var(--text-base);
+    margin-top: var(--space-sm);
+}
+
+.land-address-label {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: var(--text-lg);
+    color: var(--color-forest);
+    margin-bottom: var(--space-xs);
+}
+
+.land-address-detail {
+    display: block;
+    font-size: var(--text-sm);
+    color: var(--color-soil);
+    opacity: 0.85;
+    margin-top: var(--space-xs);
+}
+
 .gallery-maps .gallery-item img {
     aspect-ratio: auto;
     object-fit: contain;
