@@ -1,34 +1,54 @@
 <footer class="site-footer">
     <div class="footer-inner container">
-        <div class="footer-grid">
-            <div class="footer-about">
-                <h3 class="footer-heading">{{@site.title}}</h3>
-                <p class="footer-description">{{@site.description}}</p>
-                <div class="footer-social">
+        {{!-- Top: Logo + tagline + newsletter --}}
+        <div class="footer-top">
+            <div class="footer-brand">
+                {{#if @site.logo}}
+                    <img src="{{@site.logo}}" alt="{{@site.title}}" class="footer-logo">
+                {{/if}}
+                <p class="footer-tagline">Revolution from the ground up, without rulers.</p>
+            </div>
+            <div class="footer-subscribe">
+                <h3 class="footer-heading">Stay in the loop</h3>
+                <p>Get updates on events, volunteer days, and community news.</p>
+                {{> newsletter-form}}
+            </div>
+        </div>
+
+        {{!-- Middle: Nav columns --}}
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h4 class="footer-heading">Explore</h4>
+                <ul class="footer-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/gallery/">Gallery</a></li>
+                    <li><a href="/events/">Events</a></li>
+                    <li><a href="/resources/">Resources</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Get Involved</h4>
+                <ul class="footer-links">
+                    <li><a href="{{@custom.donation_url}}" target="_blank" rel="noopener">Donate</a></li>
+                    <li><a href="/donate/">How to Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Connect</h4>
+                <ul class="footer-links">
                     {{#if @custom.instagram_url}}
-                        <a href="{{@custom.instagram_url}}" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+                        <li><a href="{{@custom.instagram_url}}" target="_blank" rel="noopener">Instagram</a></li>
                     {{/if}}
                     {{#if @custom.facebook_url}}
-                        <a href="{{@custom.facebook_url}}" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+                        <li><a href="{{@custom.facebook_url}}" target="_blank" rel="noopener">Facebook</a></li>
                     {{/if}}
                     {{#if @custom.twitter_url}}
-                        <a href="{{@custom.twitter_url}}" class="social-link" target="_blank" rel="noopener" aria-label="Twitter">Twitter</a>
+                        <li><a href="{{@custom.twitter_url}}" target="_blank" rel="noopener">Twitter</a></li>
                     {{/if}}
                     {{#if @custom.discord_url}}
-                        <a href="{{@custom.discord_url}}" class="social-link" target="_blank" rel="noopener" aria-label="Discord">Discord</a>
+                        <li><a href="{{@custom.discord_url}}" target="_blank" rel="noopener">Discord</a></li>
                     {{/if}}
-                </div>
-            </div>
-
-            <div class="footer-nav">
-                <h3 class="footer-heading">Navigate</h3>
-                {{navigation}}
-            </div>
-
-            <div class="footer-newsletter">
-                <h3 class="footer-heading">Stay Connected</h3>
-                <p>Get updates on events, projects, and community news.</p>
-                {{> newsletter-form}}
+                </ul>
             </div>
         </div>
 

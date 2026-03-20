@@ -1,6 +1,10 @@
 routes:
   /donate/:
     template: page-donate
+  /gallery/:
+    template: custom-gallery
+  /about/:
+    template: page-about
 
 collections:
   /:

@@ -4,51 +4,124 @@
 <section class="hero">
     <div class="container">
         <h1>Cooperation Tulsa</h1>
-        <p>Building community power through gardens, popular education, mutual aid, and direct democracy in Tulsa, Oklahoma.</p>
+        <p class="hero-tagline">Revolution from the ground up, without rulers.</p>
+        <p>We are fighting for a future without hierarchy, where all people govern together. That means not only tearing down the hierarchies that exist, but also building the non-hierarchical alternatives.</p>
         <div class="hero-actions">
-            <a href="/projects/" class="btn btn-wheat">Our Projects</a>
+            <a href="/gallery/" class="btn btn-wheat">Gallery</a>
             <a href="/events/" class="btn btn-outline" style="border-color: var(--color-cream); color: var(--color-cream);">Upcoming Events</a>
         </div>
     </div>
 </section>
 
-{{!-- Bookchin Quote --}}
-{{> bookchin-quote}}
-
 {{!-- Mission Section --}}
-<section class="section">
+<section class="section-tight">
     <div class="container">
         <div class="section-header">
             <h2>Our Mission</h2>
             <p>At Cooperation Tulsa, we empower and uplift our community through collective and inclusive practices. We strive to build a more equitable and resilient city by fostering local food sovereignty, expanding communal access to land, and promoting direct democracy.</p>
         </div>
+        <div class="split-content">
+            <div class="split-text">
+                <p>This isn't something we can trust to others to do for us. A radical transformation requires radical action by us. There is no hero coming. <strong>We are the ones we've been waiting for.</strong></p>
+                <p>Our organization is powered entirely by volunteer effort and we make all our decisions through direct democracy and consensus. We are not bought by corporations or the government. Our money comes from recurring donations and it goes straight to our projects.</p>
+            </div>
+            <div class="split-image collage">
+                <div class="collage-grid">
+                    <img src="/content/images/gallery/stills/09282024_Flat_Rock_20240928_160343_still_1.webp" alt="Volunteers working at the raised beds" loading="lazy">
+                    <img src="/content/images/gallery/people-2024.webp" alt="Cooperation Tulsa volunteers waving at the camera" loading="lazy">
+                    <img src="/content/images/gallery/stills/07272024_Flat_Rock_20240727_135529_still.webp" alt="Three volunteers digging at the garden" loading="lazy">
+                    <img src="/content/images/gallery/stills/bonfire_preview_20251107_182414.webp" alt="Community members at the bonfire" loading="lazy">
+                    <img src="/content/images/gallery/signal-2025-10-11-18-46-34-783-2.webp" alt="Cooperation Tulsa volunteer group photo" loading="lazy">
+                    <img src="/content/images/gallery/flat-rock-workday.webp" alt="Volunteers building compost bins at Flat Rock" loading="lazy">
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
-{{!-- Featured Projects --}}
-{{#get "posts" filter="tag:hash-project+tag:hash-active" limit="3" include="tags" as |projects|}}
-    {{#if projects}}
-        <section class="section" style="background-color: var(--color-sand);">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Featured Projects</h2>
-                    <p>From urban gardens to popular education, here's how we're building the new world in the shell of the old.</p>
-                </div>
-                <div class="grid grid-3">
-                    {{#foreach projects}}
-                        {{> project-card}}
-                    {{/foreach}}
-                </div>
-                <div style="text-align: center; margin-top: var(--space-xl);">
-                    <a href="/projects/" class="btn btn-outline">View All Projects</a>
-                </div>
+{{!-- Join Our Community --}}
+<section class="newsletter-section">
+    <div class="container">
+        <h2>Join Our Community</h2>
+        <p>Get updates on events, volunteer days, and community news delivered to your inbox.</p>
+        {{> newsletter-form}}
+    </div>
+</section>
+
+{{!-- What We Do --}}
+<section class="section-tight" style="background-color: var(--color-sand);">
+    <div class="container">
+        <div class="section-header">
+            <h2>What We Do</h2>
+            <p>Revolution requires an alternative system and everything we do is about building that alternative.</p>
+        </div>
+        <div class="grid grid-3">
+            <div class="what-we-do-card">
+                <div class="what-we-do-icon">&#127793;</div>
+                <h3>Food Sovereignty</h3>
+                <p>Through Flat Rock Community Garden, we grow food by and for the community — building autonomy from corporate food systems.</p>
             </div>
-        </section>
-    {{/if}}
-{{/get}}
+            <div class="what-we-do-card">
+                <div class="what-we-do-icon">&#128218;</div>
+                <h3>Popular Education</h3>
+                <p>We run free education sessions on topics from anarcho-syndicalism to permaculture — learning together, not from the top down.</p>
+            </div>
+            <div class="what-we-do-card">
+                <div class="what-we-do-icon">&#129309;</div>
+                <h3>Mutual Aid</h3>
+                <p>Medical care networks, community safety, childcare, tool libraries, and direct support — solidarity, not charity.</p>
+            </div>
+            <div class="what-we-do-card">
+                <div class="what-we-do-icon">&#127981;</div>
+                <h3>Worker Cooperatives</h3>
+                <p>We support building worker-owned businesses where decisions are made democratically by the people doing the work.</p>
+            </div>
+            <div class="what-we-do-card">
+                <div class="what-we-do-icon">&#128587;</div>
+                <h3>Community Defense</h3>
+                <p>We look out for each other. Community safety means neighbors protecting neighbors, not relying on outside institutions.</p>
+            </div>
+            <div class="what-we-do-card">
+                <div class="what-we-do-icon">&#127760;</div>
+                <h3>Direct Democracy</h3>
+                <p>Every decision we make is through consensus. No bosses, no board of directors — just people governing themselves.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{!-- Photo Highlights --}}
+<section class="section-tight">
+    <div class="container">
+        <div class="section-header">
+            <h2>From the Garden</h2>
+            <p>Scenes from work days, gatherings, and harvests at Flat Rock.</p>
+        </div>
+        <div class="gallery-grid">
+            <figure class="gallery-item gallery-item-wide">
+                <img src="/content/images/gallery/20250913_134528.webp" alt="Sunflowers blooming at Flat Rock garden" loading="lazy">
+            </figure>
+            <figure class="gallery-item">
+                <img src="/content/images/gallery/stills/09282024_Flat_Rock_20240928_160343_still_1.webp" alt="Volunteers tending raised beds" loading="lazy">
+            </figure>
+            <figure class="gallery-item">
+                <img src="/content/images/gallery/20251101_161930.webp" alt="Bountiful harvest of pumpkins, squash, peppers, and greens" loading="lazy">
+            </figure>
+            <figure class="gallery-item">
+                <img src="/content/images/gallery/stills/bonfire_preview_173357.webp" alt="Sunset over Flat Rock on bonfire night" loading="lazy">
+            </figure>
+            <figure class="gallery-item">
+                <img src="/content/images/gallery/stills/bonfire_preview_20251107_182107.webp" alt="Community bonfire at Flat Rock" loading="lazy">
+            </figure>
+        </div>
+        <div style="text-align: center; margin-top: var(--space-lg);">
+            <a href="/gallery/" class="btn btn-outline">View Full Gallery</a>
+        </div>
+    </div>
+</section>
 
 {{!-- Recent Blog Posts --}}
-<section class="section">
+<section class="section-tight">
     <div class="container">
         <div class="section-header">
             <h2>Latest Updates</h2>
@@ -69,7 +142,7 @@
 {{!-- Upcoming Events --}}
 {{#get "posts" filter="tag:events" limit="3" order="published_at desc" include="tags" as |events|}}
     {{#if events}}
-        <section class="section" style="background-color: var(--color-sand);">
+        <section class="section-tight" style="background-color: var(--color-sand);">
             <div class="container">
                 <div class="section-header">
                     <h2>Upcoming Events</h2>
@@ -80,7 +153,7 @@
                         {{> event-card}}
                     {{/foreach}}
                 </div>
-                <div style="text-align: center; margin-top: var(--space-xl);">
+                <div style="text-align: center; margin-top: var(--space-lg);">
                     <a href="/events/" class="btn btn-outline">All Events</a>
                 </div>
             </div>
@@ -88,11 +161,22 @@
     {{/if}}
 {{/get}}
 
-{{!-- Newsletter Signup --}}
-<section class="newsletter-section">
+{{!-- Get Involved --}}
+<section class="section-tight">
     <div class="container">
-        <h2>Join Our Community</h2>
-        <p>Get updates on events, volunteer days, and community news delivered to your inbox.</p>
-        {{> newsletter-form}}
+        <div class="split-content split-content-reverse">
+            <div class="split-text">
+                <h2>Get Involved</h2>
+                <p>How can you help? In addition to financial support to keep our projects going, we always need new volunteers. You don't need to be a member to help out!</p>
+                <p>If you want to be a member of the organization, ask one of us how you can apply. And if you have skills or access to resources that might help us, just say so.</p>
+                <div class="hero-actions" style="justify-content: flex-start;">
+                    <a href="{{@custom.donation_url}}" class="btn btn-wheat" target="_blank" rel="noopener">Donate</a>
+                    <a href="/events/" class="btn btn-outline">Volunteer</a>
+                </div>
+            </div>
+            <div class="split-image">
+                <img src="/content/images/ct-promo-flyer.webp" alt="Cooperation Tulsa promotional flyer — Revolution from the ground up, without rulers" loading="lazy">
+            </div>
+        </div>
     </div>
 </section>

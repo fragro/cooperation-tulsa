@@ -3,37 +3,164 @@
 <section class="hero" style="padding: var(--space-3xl) 0;">
     <div class="container">
         <h1>About Cooperation Tulsa</h1>
+        <p>Revolution from the ground up, without rulers.</p>
     </div>
 </section>
 
-{{#if feature_image}}
+{{!-- Who We Are --}}
+<section class="section-tight">
     <div class="container">
-        <figure class="post-feature-image">
-            <img
-                srcset="{{img_url feature_image size="s"}} 300w,
-                        {{img_url feature_image size="m"}} 600w,
-                        {{img_url feature_image size="l"}} 1000w"
-                sizes="(max-width: 800px) 100vw, 1000px"
-                src="{{img_url feature_image size="l"}}"
-                alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}About Cooperation Tulsa{{/if}}"
-            >
-        </figure>
+        <div class="split-content">
+            <div class="split-text">
+                <h2>Who We Are</h2>
+                <p>We are fighting for a future without hierarchy, where all people govern together. That means not only tearing down the hierarchies that exist, but also building the non-hierarchical alternatives.</p>
+                <p>This isn't something we can trust to others to do for us. A radical transformation requires radical action by us. There is no hero coming. <strong>We are the ones we've been waiting for.</strong></p>
+            </div>
+            <div class="split-image">
+                <img src="/content/images/gallery/people-2024.webp" alt="Cooperation Tulsa volunteers" loading="lazy">
+            </div>
+        </div>
     </div>
-{{/if}}
+</section>
 
-<section class="about-section">
-    <div class="about-content">
-        {{#if html}}
-            {{content}}
-        {{else}}
-            <p>At Cooperation Tulsa, our mission is to empower and uplift our community through collective and inclusive practices. Based in Tulsa, we strive to build a more equitable and resilient city by fostering local food sovereignty, expanding communal access to land, and promoting direct democracy.</p>
-            <p>Embracing principles of mutual aid and collective action, we are dedicated to creating a network of community gardens and local councils that not only nourish our neighborhoods but also strengthen our shared commitment to social justice and sustainable living.</p>
-            <p>We draw inspiration from the work of Murray Bookchin, the democratic confederalism practiced in Rojava, and the community-building efforts of Cooperation Jackson.</p>
-        {{/if}}
+{{!-- How We Operate --}}
+<section class="section-tight" style="background-color: var(--color-sand);">
+    <div class="container">
+        <div class="section-header">
+            <h2>How We Operate</h2>
+        </div>
+        <div class="grid grid-3">
+            <div class="what-we-do-card">
+                <h3>Volunteer-Powered</h3>
+                <p>Our organization is powered entirely by volunteer effort. No one gets paid, no one is the boss. Every hour of work is freely given because we believe in what we're building.</p>
+            </div>
+            <div class="what-we-do-card">
+                <h3>Direct Democracy</h3>
+                <p>We make all our decisions through direct democracy and consensus. No board of directors, no executive committee. Every member has an equal voice in every decision.</p>
+            </div>
+            <div class="what-we-do-card">
+                <h3>Independent</h3>
+                <p>We are not bought by corporations or the government. Our money comes from recurring donations from community members and it goes straight to our projects.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{!-- What We Do --}}
+<section class="section-tight">
+    <div class="container">
+        <div class="split-content split-content-reverse">
+            <div class="split-text">
+                <h2>What We Build</h2>
+                <p>Revolution requires an alternative system and everything we do is about building that alternative. This involves creating:</p>
+                <ul>
+                    <li><strong>Community gardens</strong> and food sovereignty programs</li>
+                    <li><strong>Popular education</strong> sessions free and open to all</li>
+                    <li><strong>Mutual aid networks</strong> for medical care, housing support, and resource sharing</li>
+                    <li><strong>Worker cooperatives</strong> and democratic workplaces</li>
+                    <li><strong>Community defense</strong> and neighborhood safety</li>
+                    <li><strong>Social gatherings</strong> that build the relationships mutual aid depends on</li>
+                </ul>
+            </div>
+            <div class="split-image">
+                <img src="/content/images/gallery/flat-rock-sign.jpg" alt="Flat Rock - A Community Project by Cooperation Tulsa" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+{{!-- Flat Rock --}}
+<section class="section-tight" style="background-color: var(--color-sand);">
+    <div class="container">
+        <div class="split-content">
+            <div class="split-text">
+                <h2>Flat Rock Community Garden</h2>
+                <p>Our flagship project is Flat Rock Community Garden, a communal growing space in Tulsa where food sovereignty takes root. The garden features raised metal beds, composting stations, a developing food forest, and plans for prairie restoration.</p>
+                <p>We hold regular work days where anyone can show up and help. No gardening experience is required. Everything we grow is shared with the community.</p>
+                <a href="/gallery/" class="btn btn-outline">See the Garden</a>
+            </div>
+            <div class="split-image">
+                <img src="/content/images/gallery/20250913_134528.webp" alt="Sunflowers blooming at Flat Rock garden" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+{{!-- Our Inspirations --}}
+<section class="section-tight">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Inspirations</h2>
+            <p>We draw from a tradition of community self-organization and radical democracy.</p>
+        </div>
+        <div class="grid grid-3">
+            <div class="what-we-do-card">
+                <h3>Murray Bookchin</h3>
+                <p>The founder of social ecology and communalism, whose vision of libertarian municipalism and confederated assemblies guides our organizational structure.</p>
+            </div>
+            <div class="what-we-do-card">
+                <h3>Rojava</h3>
+                <p>The democratic confederalism practiced in northeast Syria, where communities govern themselves through local councils, gender equality, and ecological sustainability.</p>
+            </div>
+            <div class="what-we-do-card">
+                <h3>Cooperation Jackson</h3>
+                <p>The network of worker cooperatives and community land trusts in Jackson, Mississippi, building a solidarity economy from the ground up.</p>
+            </div>
+        </div>
     </div>
 </section>
 
 {{> bookchin-quote}}
+
+{{!-- Coalition Partners --}}
+<section class="section-tight" style="background-color: var(--color-sand);">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Coalition</h2>
+            <p>We work alongside allied horizontal organizations across Tulsa.</p>
+        </div>
+        <div class="grid grid-2">
+            <div class="what-we-do-card">
+                <h3>Tulsa Equity Alliance</h3>
+                <p>Community advocacy and equity work across Tulsa.</p>
+            </div>
+            <div class="what-we-do-card">
+                <h3>Scissortail Anarchist Black Cross</h3>
+                <p>Prisoner support, abolition, and solidarity with incarcerated community members.</p>
+            </div>
+            <div class="what-we-do-card">
+                <h3>Forum for Real Economic Emancipation (FREE)</h3>
+                <p>Economic justice, community assemblies, and popular education.</p>
+            </div>
+            <div class="what-we-do-card">
+                <h3>We Protect Us</h3>
+                <p>Community defense and mutual protection.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{!-- Get Involved --}}
+<section class="section-tight">
+    <div class="container">
+        <div class="section-header">
+            <h2>Get Involved</h2>
+        </div>
+        <div class="split-content">
+            <div class="split-text">
+                <p>How can you help? In addition to financial support to keep our projects going, we always need new volunteers. You don't need to be a member to help out!</p>
+                <p>If you want to be a member of the organization, ask one of us how you can apply. And if you have skills or access to resources that might help us, just say so.</p>
+                <div class="hero-actions" style="justify-content: flex-start;">
+                    <a href="{{@custom.donation_url}}" class="btn btn-wheat" target="_blank" rel="noopener">Donate</a>
+                    <a href="/events/" class="btn btn-outline">Upcoming Events</a>
+                </div>
+            </div>
+            <div class="split-image">
+                <img src="/content/images/gallery/flat-rock-workday.webp" alt="Volunteers building compost bins at Flat Rock" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="newsletter-section">
     <div class="container">

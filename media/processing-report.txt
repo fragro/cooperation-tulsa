@@ -1,0 +1,100 @@
+=== Cooperation Tulsa Media Processing ===
+Started: Wed Mar 18 21:34:09 CDT 2026
+
+--- INVENTORY ---
+Videos found: 37
+Images found: 0
+
+--- PROCESSING VIDEOS ---
+  Processing: media/drive-raw/07272024 Flat Rock/20240727_132057.mp4 (26s, 1280,720,)
+    -> clip: 07272024_Flat_Rock_20240727_132057_clip.mp4
+    -> still: 07272024_Flat_Rock_20240727_132057_still_1.webp
+    -> still: 07272024_Flat_Rock_20240727_132057_still_2.webp
+  SKIP (can't read): -raw/07272024 Flat Rock/20240727_132627.mp4
+  Processing: media/drive-raw/07272024 Flat Rock/20240727_132640.mp4 (7s, 1280,720,)
+    -> clip: 07272024_Flat_Rock_20240727_132640_full.mp4
+    -> still: 07272024_Flat_Rock_20240727_132640_still.webp
+  SKIP (can't read): -raw/07272024 Flat Rock/20240727_132719.mp4
+  Processing: media/drive-raw/07272024 Flat Rock/20240727_133757.mp4 (12s, 1280,720,)
+    -> clip: 07272024_Flat_Rock_20240727_133757_full.mp4
+    -> still: 07272024_Flat_Rock_20240727_133757_still.webp
+  SKIP (can't read): 7272024 Flat Rock/20240727_133901.mp4
+  Processing: media/drive-raw/07272024 Flat Rock/20240727_133931.mp4 (7s, 1280,720,)
+    -> clip: 07272024_Flat_Rock_20240727_133931_full.mp4
+    -> still: 07272024_Flat_Rock_20240727_133931_still.webp
+  SKIP (can't read): -raw/07272024 Flat Rock/20240727_134532.mp4
+  Processing: media/drive-raw/07272024 Flat Rock/20240727_134646.mp4 (11s, 1280,720,)
+    -> clip: 07272024_Flat_Rock_20240727_134646_full.mp4
+    -> still: 07272024_Flat_Rock_20240727_134646_still.webp
+  SKIP (can't read): 7272024 Flat Rock/20240727_134708.mp4
+  Processing: media/drive-raw/07272024 Flat Rock/20240727_134727.mp4 (8s, 1280,720,)
+    -> clip: 07272024_Flat_Rock_20240727_134727_full.mp4
+    -> still: 07272024_Flat_Rock_20240727_134727_still.webp
+  SKIP (can't read): aw/07272024 Flat Rock/20240727_135403.mp4
+  Processing: media/drive-raw/07272024 Flat Rock/20240727_135529.mp4 (7s, 1280,720,)
+    -> clip: 07272024_Flat_Rock_20240727_135529_full.mp4
+    -> still: 07272024_Flat_Rock_20240727_135529_still.webp
+  SKIP (can't read): -raw/07272024 Flat Rock/20240727_135713.mp4
+  Processing: media/drive-raw/07272024 Flat Rock/20240727_141352.mp4 (23s, 1280,720,)
+    -> clip: 07272024_Flat_Rock_20240727_141352_clip.mp4
+    -> still: 07272024_Flat_Rock_20240727_141352_still_1.webp
+    -> still: 07272024_Flat_Rock_20240727_141352_still_2.webp
+  SKIP (can't read): w/07272024 Flat Rock/20240727_141543.mp4
+  Processing: media/drive-raw/07272024 Flat Rock/20240727_141611.mp4 (15s, 1280,720,)
+    -> clip: 07272024_Flat_Rock_20240727_141611_full.mp4
+    -> still: 07272024_Flat_Rock_20240727_141611_still.webp
+  SKIP (can't read): 24 Flat Rock/20240727_141648.mp4
+  Processing: media/drive-raw/07272024 Flat Rock/20240727_141812.mp4 (16s, 1280,720,)
+    -> clip: 07272024_Flat_Rock_20240727_141812_clip.mp4
+    -> still: 07272024_Flat_Rock_20240727_141812_still_1.webp
+    -> still: 07272024_Flat_Rock_20240727_141812_still_2.webp
+  SKIP (can't read): aw/07272024 Flat Rock/20240727_141917.mp4
+  Processing: media/drive-raw/07272024 Flat Rock/20240727_142318.mp4 (9s, 1280,720,)
+    -> clip: 07272024_Flat_Rock_20240727_142318_full.mp4
+    -> still: 07272024_Flat_Rock_20240727_142318_still.webp
+  SKIP (can't read): aw/07272024 Flat Rock/20240727_142357.mp4
+  Processing: media/drive-raw/07272024 Flat Rock/20240727_143833.mp4 (50s, 1280,720,)
+    -> clip: 07272024_Flat_Rock_20240727_143833_clip.mp4
+    -> still: 07272024_Flat_Rock_20240727_143833_still_1.webp
+    -> still: 07272024_Flat_Rock_20240727_143833_still_2.webp
+  SKIP (can't read): 07272024 Flat Rock/20240727_145010.mp4
+  Processing: media/drive-raw/07272024 Flat Rock/20240727_145032.mp4 (17s, 1280,720,)
+    -> clip: 07272024_Flat_Rock_20240727_145032_clip.mp4
+    -> still: 07272024_Flat_Rock_20240727_145032_still_1.webp
+    -> still: 07272024_Flat_Rock_20240727_145032_still_2.webp
+  SKIP (can't read): aw/09282024 Flat Rock/20240928_131138.mp4
+  Processing: media/drive-raw/09282024 Flat Rock/20240928_160343.mp4 (135s, 1280,720,)
+    -> clip: 09282024_Flat_Rock_20240928_160343_clip_1.mp4
+    -> still: 09282024_Flat_Rock_20240928_160343_still_1.webp
+    -> clip: 09282024_Flat_Rock_20240928_160343_clip_2.mp4
+    -> still: 09282024_Flat_Rock_20240928_160343_still_2.webp
+    -> clip: 09282024_Flat_Rock_20240928_160343_clip_3.mp4
+    -> still: 09282024_Flat_Rock_20240928_160343_still_3.webp
+  SKIP (can't read): edia/drive-raw/09282024 Flat Rock/20240928_161332.mp4
+  Processing: media/drive-raw/09282024 Flat Rock/20240928_161506.mp4 (33s, 1280,720,)
+    -> clip: 09282024_Flat_Rock_20240928_161506_clip.mp4
+    -> still: 09282024_Flat_Rock_20240928_161506_still_1.webp
+    -> still: 09282024_Flat_Rock_20240928_161506_still_2.webp
+  SKIP (can't read): 024 Flat Rock/20240928_161616.mp4
+  Processing: media/drive-raw/09282024 Flat Rock/20240928_161731.mp4 (69s, 1280,720,)
+    -> clip: 09282024_Flat_Rock_20240928_161731_clip_1.mp4
+    -> still: 09282024_Flat_Rock_20240928_161731_still_1.webp
+    -> clip: 09282024_Flat_Rock_20240928_161731_clip_2.mp4
+    -> still: 09282024_Flat_Rock_20240928_161731_still_2.webp
+    -> clip: 09282024_Flat_Rock_20240928_161731_clip_3.mp4
+    -> still: 09282024_Flat_Rock_20240928_161731_still_3.webp
+  SKIP (can't read): edia/drive-raw/09282024 Flat Rock/20240928_162458.mp4
+  Processing: media/drive-raw/Bonfire Nov 7/20251107_171010.mp4 (538s, 1920,1080)
+    -> clip: Bonfire_Nov_7_20251107_171010_clip_1.mp4
+    -> still: Bonfire_Nov_7_20251107_171010_still_1.webp
+    -> clip: Bonfire_Nov_7_20251107_171010_clip_2.mp4
+    -> still: Bonfire_Nov_7_20251107_171010_still_2.webp
+    -> clip: Bonfire_Nov_7_20251107_171010_clip_3.mp4
+    -> still: Bonfire_Nov_7_20251107_171010_still_3.webp
+
+--- PROCESSING IMAGES ---
+
+--- SUMMARY ---
+Clips generated: 23
+Stills generated: 29
+Completed: Wed Mar 18 21:38:50 CDT 2026

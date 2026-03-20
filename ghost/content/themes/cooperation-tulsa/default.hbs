@@ -13,6 +13,28 @@
     <link rel="stylesheet" href="{{asset "css/screen.css"}}">
 
     {{ghost_head}}
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Cooperation Tulsa",
+        "url": "{{@site.url}}",
+        {{#if @site.logo}}"logo": "{{@site.url}}{{@site.logo}}",{{/if}}
+        "description": "Building community power through gardens, popular education, mutual aid, and direct democracy in Tulsa, Oklahoma.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Tulsa",
+            "addressRegion": "OK",
+            "addressCountry": "US"
+        },
+        "sameAs": [
+            {{#if @custom.instagram_url}}"{{@custom.instagram_url}}"{{/if}}
+            {{#if @custom.facebook_url}},"{{@custom.facebook_url}}"{{/if}}
+            {{#if @custom.twitter_url}},"{{@custom.twitter_url}}"{{/if}}
+        ]
+    }
+    </script>
 </head>
 <body class="{{body_class}}">
     <div class="site-wrapper">
