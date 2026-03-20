@@ -3,30 +3,211 @@
 <section class="hero" style="padding: var(--space-3xl) 0;">
     <div class="container">
         <h1>Resources</h1>
-        <p>Reading lists, guides, theory, and how-tos for building community power.</p>
+        <p>Reading lists, theory, guides, and tools for building community power.</p>
     </div>
 </section>
 
-{{!-- Filter Tabs --}}
-<section class="section">
+{{!-- Resource Library --}}
+<section class="section-tight">
     <div class="container">
         <div class="filter-tabs">
-            <a href="/resources/" class="filter-tab is-active">All</a>
-            <a href="/tag/reading-list/" class="filter-tab">Reading Lists</a>
-            <a href="/tag/guides/" class="filter-tab">Guides</a>
-            <a href="/tag/theory/" class="filter-tab">Theory</a>
-            <a href="/tag/how-to/" class="filter-tab">How-To</a>
+            <button class="filter-tab is-active" data-filter="all">All</button>
+            <button class="filter-tab" data-filter="reading">Reading</button>
+            <button class="filter-tab" data-filter="theory">Theory</button>
+            <button class="filter-tab" data-filter="guides">Guides</button>
+            <button class="filter-tab" data-filter="tools">Tools</button>
         </div>
 
-        {{#if posts}}
-            <div class="grid grid-3">
-                {{#foreach posts}}
-                    {{> resource-card}}
-                {{/foreach}}
+        <div class="resource-table">
+            <div class="resource-table-header">
+                <span class="resource-col-title">Title</span>
+                <span class="resource-col-type">Type</span>
+                <span class="resource-col-desc">Description</span>
             </div>
-            {{> pagination}}
-        {{else}}
-            <p style="text-align: center; color: var(--color-soil);">Resources are being gathered. Check back soon!</p>
-        {{/if}}
+
+            <div class="resource-row" data-category="theory">
+                <span class="resource-col-title"><a href="https://theanarchistlibrary.org/library/murray-bookchin-the-ecology-of-freedom" target="_blank" rel="noopener">The Ecology of Freedom</a></span>
+                <span class="resource-col-type"><span class="resource-badge resource-badge-theory">Theory</span></span>
+                <span class="resource-col-desc">Murray Bookchin's foundational work on social ecology — tracing the origins of hierarchy and envisioning a free, ecological society.</span>
+            </div>
+            <div class="resource-row" data-category="theory">
+                <span class="resource-col-title"><a href="https://theanarchistlibrary.org/library/murray-bookchin-the-next-revolution" target="_blank" rel="noopener">The Next Revolution</a></span>
+                <span class="resource-col-type"><span class="resource-badge resource-badge-theory">Theory</span></span>
+                <span class="resource-col-desc">Popular assemblies and the promise of direct democracy. Bookchin's essays on libertarian municipalism and communalism.</span>
+            </div>
+            <div class="resource-row" data-category="reading">
+                <span class="resource-col-title"><a href="https://theanarchistlibrary.org/library/peter-kropotkin-mutual-aid-a-factor-of-evolution" target="_blank" rel="noopener">Mutual Aid: A Factor of Evolution</a></span>
+                <span class="resource-col-type"><span class="resource-badge resource-badge-reading">Reading</span></span>
+                <span class="resource-col-desc">Kropotkin's classic argument that cooperation, not competition, is the driving force of evolution and human society.</span>
+            </div>
+            <div class="resource-row" data-category="reading">
+                <span class="resource-col-title"><a href="https://theanarchistlibrary.org/library/alexander-berkman-what-is-communist-anarchism" target="_blank" rel="noopener">What Is Communist Anarchism?</a></span>
+                <span class="resource-col-type"><span class="resource-badge resource-badge-reading">Reading</span></span>
+                <span class="resource-col-desc">Alexander Berkman's accessible introduction to anarchist ideas, written for working people.</span>
+            </div>
+            <div class="resource-row" data-category="theory">
+                <span class="resource-col-title"><a href="https://internationalistcommune.com/democratic-confederalism/" target="_blank" rel="noopener">Democratic Confederalism</a></span>
+                <span class="resource-col-type"><span class="resource-badge resource-badge-theory">Theory</span></span>
+                <span class="resource-col-desc">Abdullah Ocalan's framework for stateless democracy, as practiced in Rojava — drawing on Bookchin's communalism.</span>
+            </div>
+            <div class="resource-row" data-category="guides">
+                <span class="resource-col-title"><a href="https://www.sproutdistro.com/catalog/zines/organizing" target="_blank" rel="noopener">Sprout Distro — Organizing Zines</a></span>
+                <span class="resource-col-type"><span class="resource-badge resource-badge-guides">Guide</span></span>
+                <span class="resource-col-desc">Free zines on community organizing, security culture, direct action, and building autonomous movements.</span>
+            </div>
+            <div class="resource-row" data-category="guides">
+                <span class="resource-col-title"><a href="https://www.shareable.net/sharing-cities/" target="_blank" rel="noopener">Sharing Cities</a></span>
+                <span class="resource-col-type"><span class="resource-badge resource-badge-guides">Guide</span></span>
+                <span class="resource-col-desc">Policies and programs for urban sharing — community land trusts, tool libraries, cooperative housing, and food systems.</span>
+            </div>
+            <div class="resource-row" data-category="reading">
+                <span class="resource-col-title"><a href="https://theanarchistlibrary.org/library/errico-malatesta-anarchy" target="_blank" rel="noopener">Anarchy</a></span>
+                <span class="resource-col-type"><span class="resource-badge resource-badge-reading">Reading</span></span>
+                <span class="resource-col-desc">Errico Malatesta's concise pamphlet on anarchism — what it is, what it isn't, and why it matters.</span>
+            </div>
+            <div class="resource-row" data-category="tools">
+                <span class="resource-col-title"><a href="https://www.loomio.com/" target="_blank" rel="noopener">Loomio</a></span>
+                <span class="resource-col-type"><span class="resource-badge resource-badge-tools">Tool</span></span>
+                <span class="resource-col-desc">Collaborative decision-making software for groups. Used by cooperatives and horizontal organizations worldwide.</span>
+            </div>
+            <div class="resource-row" data-category="tools">
+                <span class="resource-col-title"><a href="https://opencollective.com/" target="_blank" rel="noopener">Open Collective</a></span>
+                <span class="resource-col-type"><span class="resource-badge resource-badge-tools">Tool</span></span>
+                <span class="resource-col-desc">Transparent fundraising platform for communities and collectives. How we manage our donations.</span>
+            </div>
+            <div class="resource-row" data-category="guides">
+                <span class="resource-col-title"><a href="https://www.sare.org/resources/building-a-sustainable-business/" target="_blank" rel="noopener">Building a Sustainable Business (SARE)</a></span>
+                <span class="resource-col-type"><span class="resource-badge resource-badge-guides">Guide</span></span>
+                <span class="resource-col-desc">Free guide to planning sustainable agriculture enterprises — useful for community garden projects scaling up.</span>
+            </div>
+            <div class="resource-row" data-category="tools">
+                <span class="resource-col-title"><a href="https://signal.org/" target="_blank" rel="noopener">Signal</a></span>
+                <span class="resource-col-type"><span class="resource-badge resource-badge-tools">Tool</span></span>
+                <span class="resource-col-desc">Encrypted messaging for secure organizing. End-to-end encryption, open source, and free.</span>
+            </div>
+        </div>
     </div>
 </section>
+
+{{!-- Ghost-managed resources --}}
+{{#if posts}}
+<section class="section-tight" style="background-color: var(--color-sand);">
+    <div class="container">
+        <div class="section-header">
+            <h2>Articles & Guides</h2>
+            <p>Resources written by our community.</p>
+        </div>
+        <div class="grid grid-3">
+            {{#foreach posts}}
+                {{> resource-card}}
+            {{/foreach}}
+        </div>
+        {{> pagination}}
+    </div>
+</section>
+{{/if}}
+
+{{!-- Coalition & Related Groups --}}
+<section class="section-tight">
+    <div class="container">
+        <div class="section-header">
+            <h2>Coalition Partners & Related Groups</h2>
+            <p>Organizations we work with and movements we draw inspiration from.</p>
+        </div>
+
+        <h3 style="margin-top: var(--space-lg);">Tulsa Coalition</h3>
+        <div class="resource-table">
+            <div class="resource-table-header">
+                <span class="resource-col-title">Organization</span>
+                <span class="resource-col-type">Focus</span>
+                <span class="resource-col-desc">Description</span>
+            </div>
+            <div class="resource-row">
+                <span class="resource-col-title">Tulsa Equity Alliance</span>
+                <span class="resource-col-type"><span class="resource-badge resource-badge-reading">Advocacy</span></span>
+                <span class="resource-col-desc">Community advocacy and equity work across Tulsa.</span>
+            </div>
+            <div class="resource-row">
+                <span class="resource-col-title">Scissortail Anarchist Black Cross</span>
+                <span class="resource-col-type"><span class="resource-badge resource-badge-theory">Abolition</span></span>
+                <span class="resource-col-desc">Prisoner support, abolition, and solidarity with incarcerated community members.</span>
+            </div>
+            <div class="resource-row">
+                <span class="resource-col-title"><a href="https://freefreeforum.org" target="_blank" rel="noopener">Forum for Real Economic Emancipation (FREE)</a></span>
+                <span class="resource-col-type"><span class="resource-badge resource-badge-guides">Education</span></span>
+                <span class="resource-col-desc">Economic justice, bi-weekly community assemblies, and popular education circles.</span>
+            </div>
+            <div class="resource-row">
+                <span class="resource-col-title">We Protect Us</span>
+                <span class="resource-col-type"><span class="resource-badge resource-badge-tools">Defense</span></span>
+                <span class="resource-col-desc">Community defense and mutual protection.</span>
+            </div>
+        </div>
+
+        <h3 style="margin-top: var(--space-xl);">Related Movements</h3>
+        <div class="resource-table">
+            <div class="resource-table-header">
+                <span class="resource-col-title">Organization</span>
+                <span class="resource-col-type">Focus</span>
+                <span class="resource-col-desc">Description</span>
+            </div>
+            <div class="resource-row">
+                <span class="resource-col-title"><a href="https://cooperationjackson.org/" target="_blank" rel="noopener">Cooperation Jackson</a></span>
+                <span class="resource-col-type"><span class="resource-badge resource-badge-tools">Cooperatives</span></span>
+                <span class="resource-col-desc">Network of worker cooperatives and community land trusts in Jackson, Mississippi. Building a solidarity economy from the ground up.</span>
+            </div>
+            <div class="resource-row">
+                <span class="resource-col-title"><a href="https://internationalistcommune.com/" target="_blank" rel="noopener">Internationalist Commune of Rojava</a></span>
+                <span class="resource-col-type"><span class="resource-badge resource-badge-theory">Confederalism</span></span>
+                <span class="resource-col-desc">The revolution in northeast Syria — democratic confederalism, gender liberation, and ecological society in practice.</span>
+            </div>
+            <div class="resource-row">
+                <span class="resource-col-title"><a href="https://social-ecology.org/" target="_blank" rel="noopener">Institute for Social Ecology</a></span>
+                <span class="resource-col-type"><span class="resource-badge resource-badge-reading">Education</span></span>
+                <span class="resource-col-desc">Founded by Murray Bookchin. Courses and resources on social ecology, communalism, and ecological politics.</span>
+            </div>
+            <div class="resource-row">
+                <span class="resource-col-title"><a href="https://www.usworker.coop/" target="_blank" rel="noopener">US Federation of Worker Cooperatives</a></span>
+                <span class="resource-col-type"><span class="resource-badge resource-badge-tools">Cooperatives</span></span>
+                <span class="resource-col-desc">National grassroots membership organization for worker cooperatives. Resources, networking, and advocacy.</span>
+            </div>
+            <div class="resource-row">
+                <span class="resource-col-title"><a href="https://www.mutualaidhub.org/" target="_blank" rel="noopener">Mutual Aid Hub</a></span>
+                <span class="resource-col-type"><span class="resource-badge resource-badge-guides">Mutual Aid</span></span>
+                <span class="resource-col-desc">Directory of mutual aid networks across the US. Find or start a group in your area.</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="newsletter-section">
+    <div class="container">
+        <h2>Know a resource we should list?</h2>
+        <p>Get in touch — we're always looking to expand our library.</p>
+        {{> newsletter-form}}
+    </div>
+</section>
+
+<script>
+(function() {
+    var tabs = document.querySelectorAll('[data-filter]');
+    var rows = document.querySelectorAll('.resource-row[data-category]');
+
+    tabs.forEach(function(tab) {
+        tab.addEventListener('click', function() {
+            var filter = tab.getAttribute('data-filter');
+
+            tabs.forEach(function(t) { t.classList.remove('is-active'); });
+            tab.classList.add('is-active');
+
+            rows.forEach(function(row) {
+                if (filter === 'all' || row.getAttribute('data-category') === filter) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+    });
+})();
+</script>
